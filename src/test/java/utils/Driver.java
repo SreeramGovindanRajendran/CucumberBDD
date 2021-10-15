@@ -12,7 +12,6 @@ public class Driver {
 
 	public WebDriver driver;
 
-	@Test
 	public void init() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
