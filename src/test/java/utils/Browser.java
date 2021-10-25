@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.Objects;
 
-public class Driver {
+public class Browser {
 
 	public static WebDriver driver;
 
@@ -16,6 +16,10 @@ public class Driver {
 	}
 	
 	public void tearDown() {
+		if(Objects.nonNull(driver))
+		{
+			driver.close();
+		}
 		if(Objects.nonNull(driver))
 		{
 			driver.quit();
