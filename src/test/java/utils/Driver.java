@@ -1,16 +1,14 @@
 package utils;
 
-import org.junit.Test;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.util.Objects;
 
 public class Driver {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 
 	public void init() {
 		WebDriverManager.chromedriver().setup();
